@@ -9,11 +9,11 @@ vsphere_datastore = "disk5-server101"
 vsphere_resource_pool = "192.168.10.101/Resources"
 vsphere_network = "VLAN10"
 
-# Infor VM clone
+# Infor VMware clone
 vsphere_virtual_machine_name_vm_clone = "k8s-master-1"
 vsphere_virtual_machine_name_clone_vm = "k8s-master-2"
 
-# Infor VM
+# Infor VMware
 guest_vcpu = "1"
 guest_memory = "1024"
 guest_ipv4_address = "192.168.10.13"
