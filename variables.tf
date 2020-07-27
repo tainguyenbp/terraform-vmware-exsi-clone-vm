@@ -1,30 +1,70 @@
-# vsphere login account. defaults to admin account
+# 
 variable "vsphere_user" {
-#  default = "administrator@vsphere.local"
+    description = "vsphere login account. defaults to admin account"
 }
 
-# vsphere account password. empty by default.
-variable "vsphere_password" {}
+variable "vsphere_password" {
+    description = "vsphere account password. empty by default."
+}
 
-# vsphere server, defaults to localhost
 variable "vsphere_server" {
-#  default = "localhost"
+    description = "vsphere server, defaults to localhost"
 }
 
-# vsphere datacenter the virtual machine will be deployed to. empty by default.
-variable "vsphere_datacenter" {}
+variable "vsphere_datacenter" {
+    description = "vsphere datacenter the virtual machine will be deployed to. empty by default."
+}
 
-# vsphere resource pool the virtual machine will be deployed to. empty by default.
-variable "vsphere_resource_pool" {}
+variable "vsphere_resource_pool" {
+    description = "vsphere resource pool the virtual machine will be deployed to. empty by default."
+}
 
-# vsphere datastore the virtual machine will be deployed to. empty by default.
-variable "vsphere_datastore" {}
+variable "vsphere_datastore" {
+    description = "vsphere datastore the virtual machine will be deployed to. empty by default."
+}
 
-# vsphere network the virtual machine will be connected to. empty by default.
-variable "vsphere_network" {}
+variable "vsphere_network" {
+    description = "vsphere network the virtual machine will be connected to. empty by default."
+}
 
-# vsphere virtual machine template that the virtual machine will be cloned from. empty by default.
-variable "vsphere_virtual_machine_template" {}
+variable "vsphere_virtual_machine_template" {
+    description = "vsphere virtual machine template that the virtual machine will be cloned from. empty by default."
+}
 
-# the name of the vsphere virtual machine that is created. empty by default.
-variable "vsphere_virtual_machine_name" {}
+variable "vsphere_virtual_machine_name" {
+    description = "the name of the vsphere virtual machine that is created. empty by default."
+}
+
+variable "guest_vcpu" {
+    description = "The number of virtual processors to assign to this virtual machine. Default: 1."
+    default     = "1"
+}
+
+variable "guest_memory" {
+  description = "The size of the virtual machine's memory, in MB. Default: 1024 (1 GB)."
+  default     = "1024"
+}
+
+variable "guest_ipv4_netmask" {
+  description = "The IPv4 subnet mask, in bits (example: 24 for 255.255.255.0)."
+}
+
+variable "guest_ipv4_gateway" {
+  description = "The IPv4 default gateway."
+}
+
+variable "guest_ipv4_address" {
+  description = "The ipv4 address for servers to configure on the virtual machine."
+}
+
+variable "guest_dns_servers" {
+  description = "The list of DNS servers to configure on the virtual machine."
+}
+
+variable "guest_host_name" {
+  description = "The host name for this machine."
+}
+
+variable "guest_domain" {
+  description = "The domain name for this machine."
+}
