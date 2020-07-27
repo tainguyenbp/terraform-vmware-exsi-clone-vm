@@ -27,11 +27,11 @@ variable "vsphere_network" {
     description = "vsphere network the virtual machine will be connected to. empty by default."
 }
 
-variable "vsphere_virtual_machine_template" {
+variable "vsphere_virtual_machine_name_vm_clone" {
     description = "vsphere virtual machine template that the virtual machine will be cloned from. empty by default."
 }
 
-variable "vsphere_virtual_machine_name" {
+variable "vsphere_virtual_machine_name_clone_vm" {
     description = "the name of the vsphere virtual machine that is created. empty by default."
 }
 

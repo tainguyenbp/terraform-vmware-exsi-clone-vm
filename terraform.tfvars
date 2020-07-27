@@ -10,8 +10,8 @@ vsphere_resource_pool = "192.168.10.101/Resources"
 vsphere_network = "VLAN10"
 
 # Infor VM clone
-vsphere_virtual_machine_template = "k8s-master-1"
-vsphere_virtual_machine_name = "k8s-master-2"
+vsphere_virtual_machine_name_vm_clone = "k8s-master-1"
+vsphere_virtual_machine_name_clone_vm = "k8s-master-2"
 
 # Infor VM
 guest_vcpu = "1"
