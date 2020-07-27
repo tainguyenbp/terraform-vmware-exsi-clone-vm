@@ -29,7 +29,7 @@ data "vsphere_virtual_machine" "vm_clone" {
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
 
-resource "vsphere_virtual_machine" "cloned_virtual_machines" {
+resource "vsphere_virtual_machine" "cloned_virtual_machine" {
   name             = "${var.vsphere_virtual_machine_name_clone_vm}"
   resource_pool_id = "${data.vsphere_resource_pool.pool.id}"
   datastore_id     = "${data.vsphere_datastore.datastore.id}"
